@@ -1,6 +1,7 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import Banner from './components/Banner'
+import BodySection from './components/BodySection'
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
       <div>
         <NavBar language={''}/>
         <Banner/>
+        <BodySection> 
         
+        </BodySection>
 
 
       </div>
