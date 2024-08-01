@@ -10,35 +10,34 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
 
     const texts = languages[language] || languages.es;
 
+    const color = ['-', '-', '-'];
+
     return (
         <>
-            <div className="mt-24 flex justify-center items-center">
+            <div className="my-24  flex justify-center items-center h-full gap-32">
 
-                <div className="w-1/2 h-full p-5 rounded-xl   font-montserrat overflow-hidden">
+                <div className="w-1/5 justrounded-xl h-full overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform ">
                     <img
                         src={timelapse}
                         alt="Timelapse"
-                        className="w-full h-full object-cover rounded-xl"
+                        className="w-full h-full object-cover "
                     />
                 </div>
 
-
-
-                <div className='w-full flex flex-col gap-3 justify-center items-center'>
-
-                    <div className='w-1/2 h-fit p-5 rounded-xl bg-blue-600 text-white font-montserrat hover:scale-110 transform transition-all ease-in duration-150'>
-                        <h1 className="text-3xl text-center font-bold">{texts.printing_explained.what_is_a_3d_printer_header}</h1>
-                        <p className='mt-2 text-center text-lg'> {texts.printing_explained.what_is_a_3d_printer_text}</p>
-                    </div>
-
-                    <div className='w-1/2 h-fit p-5 rounded-xl bg-blue-600 text-white font-montserrat hover:scale-110 transform transition-all ease-in duration-150'>
-                        <h1 className="text-3xl text-center font-bold">{texts.printing_explained.what_is_a_3d_printer_header}</h1>
-                        <p className='mt-2 text-center text-lg'> {texts.printing_explained.what_is_a_3d_printer_text}</p>
-                    </div>
-
+                <div className="w-1/3 flex flex-col gap-3 justify-center items-center">
+                    {texts.printing_explained.map((question, index) => (
+                        <div
+                            key={index}
+                            className={`w-fit h-fit py-3 rounded-xl ${color[index]} text-white font-montserrat hover:scale-110 transform transition-all ease-in duration-150`}
+                        >
+                            <h1 className="text-xl text-center font-bold">{question.header}</h1>
+                            <p className="my-2 text-sm text-justify">{question.text}</p>
+                        </div>
+                    ))}
                 </div>
 
             </div>
+
         </>
     );
 };

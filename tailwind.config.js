@@ -11,6 +11,9 @@ export default {
       fontFamily: {
         'montserrat': ["Montserrat", "sans-serif"],
       },
+      colors: {
+        background_blue: '#002FFF', 
+      }
      
     },
   },

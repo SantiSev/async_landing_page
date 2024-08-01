@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import asyncLogo from '../assets/async_logo_5.png';
 import asyncLogoMobile from '../assets/async_logo_4_white.png';
 import languages from '../languages';
@@ -14,6 +14,7 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ language }) => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [bgOpacity, setBgOpacity] = useState(1);
 
     const texts = languages[language] || languages.es;
 
@@ -43,11 +44,25 @@ const NavBar: React.FC<NavBarProps> = ({ language }) => {
         }
     });
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const maxScroll = 350; // Maximum scroll value for zero opacity
+            const opacity = Math.max(1 - scrollY / maxScroll, 0);
+            setBgOpacity(opacity);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
 
     return (
         <>
-            <div className="w-full bg-gradient-to-b from-blue-600 from-10% via-10% to-blue-900/0 fixed top-0 left-0 z-50 h-16 py-12">
+            <div className="w-full bg-gradient-to-b bg-blue-950 bg-opacity-0   fixed top-0 left-0 z-50 h-16 py-12">
                 <div className="relative w-full h-full">
                     <div className="flex justify-between items-center h-full pl-5 pr-5 md:pl-20 md:pr-16 text-white text-lg font-medium font-montserrat relative">
                         <div className="md:hidden flex items-center">

@@ -5,9 +5,9 @@ interface LanguageTexts {
     about_us: string;
     examples: string;
     printing_explained: {
-        what_is_a_3d_printer_header: string,
-        what_is_a_3d_printer_text: string
-    };
+        header: string;
+        text: string;
+    }[];
 }
 
 const languages: { [key: string]: LanguageTexts } = {
@@ -17,21 +17,42 @@ const languages: { [key: string]: LanguageTexts } = {
         questions: "Questions",
         about_us: "About Us",
         examples: "Examples",
-        printing_explained: {
-            what_is_a_3d_printer_header: "What is a 3D Printer?",
-            what_is_a_3d_printer_text: "Imagine a magical box that can create almost anything you dream of! That's a 3D printer. It's like a wizard's wand for inventors, designers, and hobbyists, turning digital designs into real-life objects."
-        }
-        },
+        printing_explained: [
+            {
+                header: "What is a 3D Printer?",
+                text: "Imagine a magical box that can create almost anything you dream of! That's a 3D printer, a powerful tool with the ability to turn any idea you have into reality."
+            },
+            {
+                header: "How Does It Work?",
+                text: "A 3D printer uses a roll of plastic called 'filament', which works like ink in a conventional printer. The filament can be made of different materials, like PLA or even more flexible plastics like TPU."
+            },
+            {
+                header: "What Can You Create?",
+                text: "The possibilities are endless! With a 3D printer, you can create toys, stands for your devices, collectible figures, and much more. What will you create?"
+            }
+        ]
+    },
     es: {
         current_language: "ES",
         services: "Servicios",
         questions: "Preguntas",
         about_us: "Sobre Nosotros",
         examples: "Ejemplos",
-        printing_explained: {
-            what_is_a_3d_printer_header: "¿Qué es una Impresora 3D?",
-            what_is_a_3d_printer_text: "¡Imagina una caja mágica que puede crear casi cualquier cosa que imagines! Eso es una impresora 3D. Es como una varita mágica para inventores, diseñadores y aficionados, convirtiendo diseños digitales en objetos reales."
-        } }
+        printing_explained: [
+            {
+                header: "¿Qué es una Impresora 3D?",
+                text: "¡Imagina una caja mágica que puede crear casi cualquier cosa que sueñes! Eso es una impresora 3D, una poderosa herramienta con la capacidad de convertir en realidad cualquier idea que tengas."
+            },
+            {
+                header: "¿Cómo Funciona?",
+                text: "Una impresora 3D utiliza un rollo de plástico llamado 'filamento', que funciona como la tinta en una impresora convencional. El filamento puede ser de diferentes materiales, como PLA o incluso plásticos más flexibles como TPU."
+            },
+            {
+                header: "¿Qué Puedes Crear?",
+                text: "¡Las posibilidades son infinitas! Con una impresora 3D, puedes crear juguetes, soportes para tus dispositivos, figuras de colección y mucho más. ¿Qué vas a crear tú?"
+            }
+        ]
+    }
 };
 
 export default languages;
