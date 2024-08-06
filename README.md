@@ -20,6 +20,11 @@ npm install react-icons --save
 npm install @use-gesture/react react-spring
 ```
 
+**Slick Image Slider** <br>
+```
+npm install react-slick --save
+```
+
 **BATCH dependancy installs** <br>
 Run in the terminal the BASH script called ```install_dependencies.sh``` to automatically install all dependencies. Or if you are on windows, run the  ```install_dependencies.bat``` file
 

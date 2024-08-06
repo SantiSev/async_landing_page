@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useEffect, useRef } from "react";
+
 import print_1 from '../assets/prints/print_1.jpg';
 import print_2 from '../assets/prints/print_2.jpg';
 import print_3 from '../assets/prints/print_3.jpg';
@@ -8,60 +10,89 @@ import print_6 from '../assets/prints/print_6.jpg';
 import print_7 from '../assets/prints/print_7.jpg';
 import print_8 from '../assets/prints/print_8.jpg';
 
+import languages from '../languages';
 
-const ImagesSection: React.FC = () => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+interface ImagesSectionProps {
+    language: string;
+}
 
-    const images = [print_1, print_2, print_3, print_4, print_5, print_6, print_7, print_8];
+const ImagesSection: React.FC<ImagesSectionProps> = ({ language }) => {
 
-    const nextImage = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-    };
+    const texts = languages[language] || languages.es;
 
-    const prevImage = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
+    const sliderRef = useRef<HTMLDivElement | null>(null);
+    const slideIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+    const images = [print_1, print_2, print_3 ];
 
     useEffect(() => {
-        const autoSlide = setInterval(nextImage, 3000); // Change image every 3 seconds
-        return () => clearInterval(autoSlide); // Clear interval on component unmount
-    }, [currentImageIndex]);
+        const handleSlide = () => {
+
+        };
+
+        slideIntervalRef.current = setInterval(handleSlide, 3000);
+
+        return () => {
+            if (slideIntervalRef.current) {
+                clearInterval(slideIntervalRef.current);
+            }
+        };
+    }, []);
+
 
     return (
         <>
-            <div className=" bg-white relative w-full flex items-center justify-center">
-                <button
-                    className="absolute left-0 z-10 bg-gray-800 text-white p-2 rounded-full"
-                    onClick={prevImage}
-                >
-                    ❮
-                </button>
+            <div className='flex flex-col gap-1 h-screen mb-2'>
 
-                <div className="image-slider flex overflow-hidden w-full h-full">
-                    {images.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`Image ${index + 1}`}
-                            className={`w-1/6 h-1/3 transition-transform duration-500 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-                                }`}
-                            style={{position: index === currentImageIndex ? 'relative' : 'absolute',
-                            }}
-                        />
-                    ))}
+                <div className="mt-32 w-full flex justify-center">
+                    <div className="text-center ">
+                        <hr className="border-b-2 border-background_blue mx-auto w-3/4 " />
+                        <h1 className="text-3xl font-bold font-montserrat text-background_blue my-2 px-20">
+                            {texts.services}
+                        </h1>
+                        <hr className="border-b-2 border-background_blue mx-auto w-3/4 " />
+                    </div>
                 </div>
 
-                <button
-                    className="absolute right-0 z-10 bg-gray-800 text-white p-2 rounded-full"
-                    onClick={nextImage}
-                >
-                    ❯
-                </button>
+                <div className="w-full h-1/2">
+                    <div
+                        ref={sliderRef}
+                        className="flex w-full h-full overflow-visible my-3 px-4"
+                    >
+                        {images.map((image, index) => (
+                            <div key={index} className="w-1/3 h-full my-auto flex-shrink-0 transition transform py-5 hover:scale-105">
+                                <div className="w-full h-full">
+                                    <img
+                                        src={image}
+                                        alt={`slide-${index}`}
+                                        className="w-11/12 h-full object-cover rounded-2xl mx-auto shadow-lg shadow-black bg-black"
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="w-full my-2">
+                    <div className="text-center inline-block"> 
+                        <div className='flex justify-center items-center '>
+                        {texts.services_text.map((service_text, index) => (
+                            <div
+                                key={index}
+                                className={`w-fit h-fit py-3 rounded-xl  text-background_blue font-montserrat hover:scale-110 transform transition-all ease-in duration-150`}
+                            >
+
+                                <h1 className="text-center font-bold">{service_text.header}</h1>
+                                <p className=" w-fit my-2 font-medium  text-center">{service_text.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    </div>
+                </div>
+
             </div>
+
+
         </>
     );
 };

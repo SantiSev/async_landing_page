@@ -62,7 +62,7 @@ const NavBar: React.FC<NavBarProps> = ({ language }) => {
 
     return (
         <>
-            <div className="w-full bg-gradient-to-b bg-blue-950 bg-opacity-0   fixed top-0 left-0 z-50 h-16 py-12">
+            <div className="w-full bg-gradient-to-b bg-blue-950 bg-opacity-50   fixed top-0 left-0 z-50 h-16 py-12">
                 <div className="relative w-full h-full">
                     <div className="flex justify-between items-center h-full pl-5 pr-5 md:pl-20 md:pr-16 text-white text-lg font-medium font-montserrat relative">
                         <div className="md:hidden flex items-center">

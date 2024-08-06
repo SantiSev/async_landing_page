@@ -1,6 +1,10 @@
 interface LanguageTexts {
     current_language: string;
     services: string;
+    services_text: {
+        header: string;
+        text: string;
+    }[];
     questions: string;
     about_us: string;
     examples: string;
@@ -8,12 +12,27 @@ interface LanguageTexts {
         header: string;
         text: string;
     }[];
+    our_prints: string;
 }
 
 const languages: { [key: string]: LanguageTexts } = {
     en: {
         current_language: "EN",
         services: "Services",
+        services_text: [
+            {
+                header: "Choose one of our designs!",
+                text: "We can customize them in size and color according to your preferences."
+            },
+            {
+                header: "Have your own idea?",
+                text: "We can print it! Share your specifications with us."
+            },
+            {
+                header: "Not sure what to print?",
+                text: "Contact us, and we'll help you find the perfect idea."
+            }
+        ],
         questions: "Questions",
         about_us: "About Us",
         examples: "Examples",
@@ -30,11 +49,26 @@ const languages: { [key: string]: LanguageTexts } = {
                 header: "What Can You Create?",
                 text: "The possibilities are endless! With a 3D printer, you can create toys, stands for your devices, collectible figures, and much more. What will you create?"
             }
-        ]
+        ],
+        our_prints: "Our Prints"
     },
     es: {
         current_language: "ES",
         services: "Servicios",
+        services_text: [
+            {
+                header: "¡Elige uno de nuestros diseños!",
+                text: "Podemos personalizarlos en tamaño y color según tus preferencias."
+            },
+            {
+                header: "¿Tienes una idea propia?",
+                text: "¡Podemos imprimirla! Comparte con nosotros tus especificaciones."
+            },
+            {
+                header: "¿No sabes qué imprimir?",
+                text: "Contáctanos y te ayudaremos a encontrar la idea perfecta."
+            }
+        ],        
         questions: "Preguntas",
         about_us: "Sobre Nosotros",
         examples: "Ejemplos",
@@ -51,7 +85,8 @@ const languages: { [key: string]: LanguageTexts } = {
                 header: "¿Qué Puedes Crear?",
                 text: "¡Las posibilidades son infinitas! Con una impresora 3D, puedes crear juguetes, soportes para tus dispositivos, figuras de colección y mucho más. ¿Qué vas a crear tú?"
             }
-        ]
+        ],
+        our_prints: "Nuestras Impresiones"
     }
 };
 

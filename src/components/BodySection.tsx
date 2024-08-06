@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react';
 
-interface BodySectionProps {
+type BodySectionProps = {
     children: ReactNode;
-}
+};
 
-const BodySection: React.FC<BodySectionProps> = ({ children }) => { // Set default color
+const BodySection: React.FC<BodySectionProps> = ({ children }) => {
     return (
         <>
-            <div className='flex flex-col absolute -mt-8 left-0 bg-background_blue  w-full h-full'>
+            <div className='w-full absolute left-0 -mt-8 h-fit flex flex-col'>
                 {children}
             </div>
         </>
