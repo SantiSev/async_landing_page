@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import asyncLogo from '../assets/async_logo_5.png';
 import asyncLogoMobile from '../assets/async_logo_4_white.png';
 import languages from '../languages';
@@ -14,7 +14,6 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ language }) => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const [bgOpacity, setBgOpacity] = useState(1);
 
     const texts = languages[language] || languages.es;
 
@@ -43,22 +42,6 @@ const NavBar: React.FC<NavBarProps> = ({ language }) => {
             setIsOpen(true);
         }
     });
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const maxScroll = 350; // Maximum scroll value for zero opacity
-            const opacity = Math.max(1 - scrollY / maxScroll, 0);
-            setBgOpacity(opacity);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-
 
     return (
         <>
