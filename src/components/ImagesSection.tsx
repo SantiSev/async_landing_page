@@ -42,15 +42,15 @@ const ImagesSection: React.FC<ImagesSectionProps> = ({ language }) => {
 
     return (
         <>
-            <div className='flex flex-col gap-1 h-screen mb-2'>
+            <div className='flex flex-col gap-4 items-center justify-center h-screen mb-2 0'>
 
-                <div className="mt-32 w-full flex justify-center">
+                <div className="w-full flex justify-center ">
                     <div className="text-center ">
-                        <hr className="border-b-2 border-background_blue mx-auto w-3/4 " />
-                        <h1 className="text-3xl font-bold font-montserrat text-background_blue my-2 px-20">
+                        <hr className="border-b-2 border-white mx-auto w-3/4 " />
+                        <h1 className="text-3xl font-bold font-montserrat text-white my-2 px-20">
                             {texts.services}
                         </h1>
-                        <hr className="border-b-2 border-background_blue mx-auto w-3/4 " />
+                        <hr className="border-b-2 border-white mx-auto w-3/4 " />
                     </div>
                 </div>
 
@@ -79,7 +79,7 @@ const ImagesSection: React.FC<ImagesSectionProps> = ({ language }) => {
                         {texts.services_text.map((service_text, index) => (
                             <div
                                 key={index}
-                                className={`w-fit h-fit py-3 rounded-xl  text-background_blue font-montserrat hover:scale-110 transform transition-all ease-in duration-150`}
+                                className={`w-fit h-fit py-3 rounded-xl  text-white font-montserrat scale-90 hover:scale-100 transform transition-all ease-in duration-150`}
                             >
 
                                 <h1 className="text-center font-bold">{service_text.header}</h1>
