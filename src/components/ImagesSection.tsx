@@ -42,7 +42,7 @@ const ImagesSection: React.FC<ImagesSectionProps> = ({ language }) => {
 
     return (
         <>
-            <div className='flex flex-col gap-4 items-center justify-center h-screen mb-2 0'>
+            <div className='flex flex-col gap-4 items-center justify-center h-screen  0'>
 
                 <div className="w-full flex justify-center ">
                     <div className="text-center ">

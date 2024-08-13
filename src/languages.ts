@@ -13,6 +13,8 @@ interface LanguageTexts {
         text: string;
     }[];
     our_prints: string;
+    contact_us: string;
+    created_by: string;
 }
 
 const languages: { [key: string]: LanguageTexts } = {
@@ -50,8 +52,10 @@ const languages: { [key: string]: LanguageTexts } = {
                 text: "The possibilities are endless! With a 3D printer, you can create toys, stands for your devices, collectible figures, and much more. What will you create?"
             }
         ],
-        our_prints: "Our Prints"
-    },
+        our_prints: "Our Prints",
+        contact_us: "Contact Us",
+        created_by: "Created by Santiago Sevitz, 2024"
+     },
     es: {
         current_language: "ES",
         services: "Servicios",
@@ -86,7 +90,9 @@ const languages: { [key: string]: LanguageTexts } = {
                 text: "¡Las posibilidades son infinitas! Con una impresora 3D, puedes crear juguetes, soportes para tus dispositivos, figuras de colección y mucho más. ¿Qué vas a crear tú?"
             }
         ],
-        our_prints: "Nuestras Impresiones"
+        our_prints: "Nuestras Impresiones",
+        contact_us: "Contacto",
+        created_by: "Creado por Santiago Sevitz, 2024"
     }
 };
 

@@ -21,7 +21,7 @@ function App() {
           style={{ transform: 'scale(1.1)' }}/>
           <div className="relative z-10">
             <ImagesSection language={''} />
-            <FooterSection />
+            <FooterSection language={''} />
           </div>
         </div>
 
