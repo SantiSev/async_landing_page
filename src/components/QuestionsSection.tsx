@@ -12,9 +12,9 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
 
     return (
         <>
-            <div className="snap-y py-20 flex justify-center items-center gap-28 bg-background_purple  w-full h-screen ">
+            <div className="snap-y py-28 flex justify-center items-center gap-28 bg-background_purple  w-full h-screen ">
 
-                <div className="w-1/5 justrounded-xl h-full overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform ">
+                <div className="w-1/5 h-full overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform ">
                     <img
                         src={timelapse}
                         alt="Timelapse"

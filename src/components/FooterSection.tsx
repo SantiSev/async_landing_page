@@ -42,7 +42,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ language }) => {
 
             <div className='my-5 py-3 flex items-center justify-center'>
                 <div className='flex flex-col'>
-                    <div className='flex items-center justify-center gap-4 bg-background_purple hover:scale-125 hover:cursor-pointer px-40 hover:px-60 py-3 rounded-full font-extrabold text-2xl transform transition-all'>
+                    <div className='flex items-center justify-center gap-4 bg-background_purple hover:scale-110 hover:-mt-2 hover:cursor-pointer px-40 hover:px-60 py-3 rounded-full font-extrabold text-2xl transform transition-all'>
                         ¡Ingrese aquí para contactarnos!
                         <img className='w-9 h-9 rotate-12' src={form} alt="" />
                     </div>

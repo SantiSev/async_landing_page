@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import asyncLogo from '../assets/async_logo_5.png';
+import asyncLogo from '../assets/async_logo_4_white.png';
 import asyncLogoMobile from '../assets/async_logo_4_white.png';
 import languages from '../languages';
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -45,7 +45,7 @@ const NavBar: React.FC<NavBarProps> = ({ language }) => {
 
     return (
         <>
-            <div className="absolute z-10 left-0 top-0  bg-gradient-to-b from-background_purple  to-95% to-transparent w-full h-16 py-12">
+            <div className=" z-50 fixed left-0 top-0  bg-gradient-to-b from-background_purple from-10% to-transparent w-full h-16 py-12">
                 <div className="relative w-full h-full">
                     <div className="flex justify-between items-center h-full pl-5 pr-5 md:pl-20 md:pr-16 text-white text-lg font-medium font-montserrat relative">
                         <div className="md:hidden flex items-center">
@@ -55,7 +55,7 @@ const NavBar: React.FC<NavBarProps> = ({ language }) => {
                         </div>
                         <div className="h-14 mx-auto md:mx-0 md:ml-0 hover:cursor-pointer">
                             <img src={asyncLogoMobile} alt="Async Logo Mobile" className="block md:hidden h-16 rotate-12 -mt-1" />
-                            <img src={asyncLogo} alt="Async Logo" className="hidden md:block h-full" />
+                            <img src={asyncLogo} alt="Async Logo" className="hidden md:block rotate-12 w-full h-20 " />
                         </div>
                         <div className="hidden md:flex md:justify-normal md:gap-x-12">
                             {navBarTexts.map((text, index) => (
