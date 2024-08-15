@@ -7,7 +7,7 @@ type BodySectionProps = {
 const BodySection: React.FC<BodySectionProps> = ({ children }) => {
     return (
         <>
-            <div className='w-full absolute left-0 -mt-8 h-fit flex flex-col'>
+            <div className='snap-y scroll-smooth focus:scroll-auto w-full absolute left-0 -mt-8 h-fit flex flex-col'>
                 {children}
             </div>
         </>

@@ -28,9 +28,9 @@ const FooterSection: React.FC<FooterSectionProps> = ({ language }) => {
     }, [preguntas_posibles.length]);
 
     return (
-        <div className='font-montserrat text-white h-screen w-full bg-gradient-to-b from-transparent to-black flex flex-col justify-center gap-9 items-center'>
+        <div id="contact" className='font-montserrat text-white h-screen w-full bg-gradient-to-b from-transparent to-black flex flex-col justify-center gap-9 items-center'>
 
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center scale-125">
                 <div className="text-center">
                     <hr className="border-b-2 border-white mx-auto w-3/4" />
                     <h1 className="text-3xl font-bold my-2 px-20">
