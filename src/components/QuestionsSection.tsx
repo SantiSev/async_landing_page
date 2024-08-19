@@ -12,7 +12,7 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
 
     return (
         <>
-            <div id="questions" className="snap-y scroll-smooth focus:scroll-auto py-28 flex justify-center items-center gap-28 bg-background_purple  w-full h-screen ">
+            <div id="questions" className="snap-y scroll-smooth focus:scroll-auto xl:py-28 py-16 flex justify-center items-center gap-28 bg-background_purple  w-full h-screen ">
 
                 <div className="w-1/5 h-full overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform ">
                     <img
@@ -22,14 +22,14 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
                     />
                 </div>
 
-                <div className="w-1/3 h-full flex flex-col gap-3 justify-center items-center">
+                <div className="w-1/3 h-full flex flex-col xl:gap-3  justify-center items-center">
                     {texts.printing_explained.map((question, index) => (
                         <div
                             key={index}
-                            className={`w-fit h-fit py-3 rounded-xl cursor-pointer text-white font-montserrat transform transition-all ease-in duration-150`}
+                            className={`w-fit h-fit py-3 rounded-xl cursor-pointer  text-white font-montserrat transform transition-all ease-in duration-150`}
                         >
-                            <h1 className="text-xl text-center font-bold">{question.header}</h1>
-                            <p className="my-2 text-sm text-justify">{question.text}</p>
+                            <h1 className="xl:text-xl text-lg text-center font-bold">{question.header}</h1>
+                            <p className="my-2 xl:text-sm text-xs text-justify">{question.text}</p>
                         </div>
                     ))}
                 </div>

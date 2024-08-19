@@ -32,7 +32,7 @@ function SimpleSlider() {
         {images.map((image, index) => (
           <div key={index}>
             <img
-              className="w-full h-96 object-cover transition-all transform ease-in-out duration-500 mx-auto rounded-3xl shadow-black shadow-lg hover:shadow-md  scale-90 hover:scale-100"
+              className="w-full xl:h-96 h-48 object-cover transition-all transform ease-in-out duration-500 mx-auto rounded-3xl shadow-black shadow-lg hover:shadow-md  scale-90 hover:scale-100"
               src={image}
               alt={`print_${index}`}
             />

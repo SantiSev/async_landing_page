@@ -83,7 +83,7 @@ const NavBar: React.FC<NavBarProps> = ({ language, onLanguageChange }) => {
                                     {item.text}
                                 </div>
                             ))}
-                            <div onClick={onLanguageChange} className="font-semibold md:text-2xl text-3xl bg-opacity-75 hover:cursor-pointer text-center w-14 bg-background_purple  p-2 rounded-full ">{texts.current_language}</div>
+                            <div onClick={onLanguageChange} className="font-semibold md:text-2xl text-3xl bg-opacity-75 hover:cursor-pointer text-center w-14  p-2 rounded-full ">{texts.current_language}</div>
                         </div>
                         <div  onClick={onLanguageChange} className="md:hidden w-14 font-semibold text-3xl hover:cursor-pointer">{texts.current_language}</div>
                     </div>
@@ -93,7 +93,7 @@ const NavBar: React.FC<NavBarProps> = ({ language, onLanguageChange }) => {
             <animated.div
                 {...bind()}
                 style={{ x, touchAction: 'none' }}
-                className="md:hidden fixed top-0 left-0 w-3/5 h-fit pb-10 rounded-r-3xl bg-background_purple bg-opacity-55 z-40 transform transition-transform duration-75"
+                className="md:hidden fixed top-0 left-0 w-3/5 h-fit pb-10 rounded-r-3xl bg-opacity-55 z-40 transform transition-transform duration-75"
             >
                 <div className="flex flex-col mt-20 gap-3 items-start pl-5 pr-5 text-white text-xl font-medium font-montserrat">
                     {navBarTexts.map((item, index) => (
