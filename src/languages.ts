@@ -15,6 +15,8 @@ interface LanguageTexts {
     our_prints: string;
     contact_us: string;
     created_by: string;
+    form_header: string;
+    form_questions: string[];
 }
 
 const languages: { [key: string]: LanguageTexts } = {
@@ -54,8 +56,14 @@ const languages: { [key: string]: LanguageTexts } = {
         ],
         our_prints: "Our Prints",
         contact_us: "Contact Us",
-        created_by: "Created by Santiago Sevitz, 2024"
-     },
+        created_by: "Created by Santiago Sevitz, 2024",
+        form_header: "Click here to contact us!",
+        form_questions: [
+            "Check our shipping!",
+            "Check our prices!",
+            "Check our products!"
+        ]
+    },
     es: {
         current_language: "ES",
         services: "Servicios",
@@ -72,7 +80,7 @@ const languages: { [key: string]: LanguageTexts } = {
                 header: "¿No sabes qué imprimir?",
                 text: "Contáctanos y te ayudaremos a encontrar la idea perfecta."
             }
-        ],        
+        ],
         questions: "Preguntas",
         about_us: "Sobre Nosotros",
         examples: "Ejemplos",
@@ -92,7 +100,14 @@ const languages: { [key: string]: LanguageTexts } = {
         ],
         our_prints: "Nuestras Impresiones",
         contact_us: "Contacto",
-        created_by: "Creado por Santiago Sevitz, 2024"
+        created_by: "Creado por Santiago Sevitz, 2024",
+        form_header: "¡Ingresa aquí para contactarnos!",
+        form_questions: [
+            "¡Consulta nuestros envíos!",
+            "¡Consulta nuestros precios!",
+            "¡Consulta nuestros productos!"
+        ]
+
     }
 };
 

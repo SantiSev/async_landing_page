@@ -25,6 +25,11 @@ npm install @use-gesture/react react-spring
 npm install react-slick --save
 ```
 
+**Animate On Scroll Library**
+```
+npm install aos --save
+```
+
 **BATCH dependancy installs** <br>
 Run in the terminal the BASH script called ```install_dependencies.sh``` to automatically install all dependencies. Or if you are on windows, run the  ```install_dependencies.bat``` file
 
