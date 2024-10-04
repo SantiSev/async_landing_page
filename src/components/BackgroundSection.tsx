@@ -15,6 +15,7 @@ const BackgroundSection: React.FC<BackgroundSectionProps> = ({ children }) => {
         loop
         muted
       />
+      <div className="absolute w-full h-full bg-black bg-opacity-50"></div>
       <div className="relative z-10">
         {children}
       </div>

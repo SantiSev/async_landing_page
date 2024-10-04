@@ -25,7 +25,7 @@ const Banner = () => {
       />
 
       <video
-        className="absolute inset-0 m-auto  h-auto object-contain w-3/4"
+        className="absolute inset-0 m-auto  h-auto object-contain lg:w-3/4  "
         src={async_logo_animated}
         autoPlay
         loop
