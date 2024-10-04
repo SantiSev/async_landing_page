@@ -6,6 +6,7 @@ import ImagesSection from './components/ImagesSection'
 import BodySection from './components/BodySection'
 import FooterSection from './components/FooterSection'
 import BackgroundSection from './components/BackgroundSection'
+import ImagesSectionRefactor from './components/ImagesSectionRefactor';
 
 
 function App() {
@@ -22,9 +23,9 @@ function App() {
       <NavBar  language={language} onLanguageChange={handleLanguageChange} />
       <Banner/>
       <BodySection>
-        <QuestionsSection language={language} />
         <BackgroundSection>
-          <ImagesSection language={language} />
+        <QuestionsSection language={language} />
+          <ImagesSectionRefactor language={language} />
           <FooterSection language={language} />
         </BackgroundSection>
       </BodySection>
