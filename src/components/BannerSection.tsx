@@ -1,7 +1,7 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import banner_video from "../assets/banner_video.mp4";
+import banner_video from "../assets/bg_vid_1.mp4";
 import async_logo_animated from "../assets/async_animated.webm";
-import { useSpring, animated } from "react-spring";
+import { useSpring } from "react-spring";
 
 const Banner = () => {
   const [, api] = useSpring(() => ({ x: -300 }));

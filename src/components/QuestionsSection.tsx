@@ -12,7 +12,7 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
 
     return (
         <>
-            <div id="questions" className="relative snap-y scroll-smooth bg-gradient-to-b  from-background_purple to-transparent from-85%  focus:scroll-auto xl:py-28 py-16 flex justify-center items-center gap-28  w-full h-screen ">
+            <div id="questions" className="relative snap-y scroll-smooth bg-gradient-to-b  from-background_purple to-transparent from-95%  focus:scroll-auto xl:py-28 py-16 flex justify-center items-center gap-28  w-full h-screen ">
                 <div className="w-1/5 h-full overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform ">
                     <img
                         src={timelapse}
