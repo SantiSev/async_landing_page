@@ -13,7 +13,7 @@ export default {
         'satoshi': ["Satoshi", "sans-serif"],
       },
       colors: {
-        background_blue: '#002FFF', 
+        background_blue: '#002FFF',
         background_purple: '#3D188C',
       }
     },
