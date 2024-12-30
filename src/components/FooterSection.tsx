@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import socialMedias from "../socialMedia";
+import { socialMedias, forumURL } from "../socialMedia";
 import languages from "../languages";
 import form from "../assets/form.svg";
 import SectionTitle from "./SectionTitle";
@@ -34,7 +34,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ language }) => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -56,10 +56,17 @@ const FooterSection: React.FC<FooterSectionProps> = ({ language }) => {
 
       <div className="my-5 py-3 flex items-center justify-center">
         <div className="flex flex-col">
-          <div className="flex items-center justify-center gap-4 bg-background_purple xl:hover:scale-110 hover:-mt-2 xl:hover:cursor-pointer xl:px-40 hover:px-60 py-3 rounded-full font-bold xl:text-2xl text-lg px-5 transform transition-all">
+            <a
+            className="flex items-center justify-center gap-4 bg-background_purple xl:hover:scale-110 hover:-mt-2 xl:hover:cursor-pointer xl:px-40 hover:px-60 py-3 rounded-full font-bold xl:text-2xl text-lg px-5 transform transition-all"
+            href={forumURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
             {texts.form_header}
-            {!isMobile && <img className="w-9 h-9 rotate-12" src={form} alt="" />}
-          </div>
+            {!isMobile && (
+              <img className="w-9 h-9 rotate-12" src={form} alt="" />
+            )}
+            </a>
 
           <div className="mt-3 text-xl text-center duration-1000 transform transition-all">
             {preguntas_posibles[currentQuestionIndex]}

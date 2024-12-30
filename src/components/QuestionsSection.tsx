@@ -13,12 +13,14 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
     return (
         <>
             <div id="questions" className="relative snap-y scroll-smooth bg-gradient-to-b from-background_purple to-transparent xl:from-50% from-60% focus:scroll-auto xl:py-28 py-16 flex flex-col xl:flex-row justify-center items-center gap-28 w-full h-screen">
-                <div className="w-1/5 h-full overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform hidden xl:block">
-                    <img
+                <div className="w-1/5 h-full bg-white overflow-hidden shadow-2xl shadow-black rounded-3xl rotate-3 hover:rotate-0 transition transform hidden xl:block">
+                   {/*  <img
                         src={timelapse}
                         alt="Timelapse"
                         className="w-full h-full object-cover"
-                    />
+                    /> */}
+                    ¡Aquí hay algunas recomendaciones de Paginas para ver distintos tipos de impresiones 3D!
+
                 </div>
 
                 <div className="w-full xl:w-1/3 flex flex-col  gap-y-2 gap-4 justify-center items-center text-center xl:px-0 px-10">
