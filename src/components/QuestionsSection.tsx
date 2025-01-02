@@ -24,20 +24,20 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
           />
         </div>
 
-        <div className="w-full xl:w-1/3 flex flex-col  gap-y-2 gap-4 justify-center items-center text-center xl:px-0 px-10">
+        <div className="xl:mt-0 mt-20  w-full xl:w-1/3 flex flex-col  gap-y-2 xl:gap-4 gap-1 justify-center items-center text-center xl:px-0 px-10">
           {texts.printing_explained.map((question, index) => (
             <div
               key={index}
-              className={`w-fit h-fit py-3 rounded-xl cursor-pointer text-white font-montserrat transform transition-all ease-in duration-150`}
+              className={`w-fit h-fit xl:py-3 rounded-xl cursor-pointer text-white font-montserrat transform transition-all ease-in duration-150`}
             >
-              <h1 className="xl:text-xl text-lg font-bold">
+              <h1 className="xl:text-xl text-sm font-bold">
                 {question.header}
               </h1>
               <p className="my-2 xl:text-sm text-xs">{question.text}</p>
             </div>
           ))}
           <div className="flex justify-center items-center gap-20">
-            <div className="flex xl:gap-14 gap-8 xl:mt-0 mt-5">
+            <div className="flex xl:gap-14 gap-5 xl:mt-0 -mt-1">
               {websites.map((content, index) => (
                 <a
                 href={content.link}

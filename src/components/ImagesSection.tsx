@@ -33,14 +33,16 @@ const ImagesSectionRefactor: React.FC<ImagesSectionProps> = ({ language }) => {
             icon={printingIcon}
             className="md:mt-12 mt-16 "
           />
-          <div className="h-0.5 rounded-full bg-white xl:w-1/4 w-3/4"></div>
+            <div className="h-0.5 rounded-full bg-white w-3/4 xl:w-1/4 block text-opacity-5">
+              <span className="invisible">filler text to show the line for mobile devices</span>
+            </div>
           <EmblaSlider slides={images} options={{ loop: true }} />
-          <div className="w-full">
+          <div className="w-full ">
             <div className="flex justify-center items-center text-center -mt-2 mb-5">
               {texts.services_text.map((service, index) => (
                 <div
                   key={index}
-                  className={`justify-center items-center flex flex-col xl:w-1/3 w-full h-fit rounded-full bg-opacity-30 text-white font-montserrat cursor-pointer transition-opacity duration-1000 ${
+                  className={`xl:-mt-0 -mt-20 justify-center items-center flex flex-col xl:w-1/3 w-full h-fit rounded-full bg-opacity-30 text-white font-montserrat cursor-pointer transition-opacity duration-1000 ${
                     currentIndex === index ? "block" : "hidden"
                   } xl:block`}
                   style={{ opacity: 1 }}

@@ -1,5 +1,5 @@
 import React from 'react';
-import banner_video from '../assets/bg_videos/bg_vid_2.mp4';
+import banner_video from '../assets/bg_videos/bg_vid_2.webm';
 
 interface BackgroundSectionProps {
   children: React.ReactNode;

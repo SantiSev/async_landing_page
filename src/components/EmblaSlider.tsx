@@ -13,7 +13,7 @@ export default function EmblaSlider(props: PropType): JSX.Element {
   ]);
 
   return (
-    <div className="w-full mx-auto xl:mt-0 -mt-7">
+    <div className="w-full h-3/4  xl:h-full  mx-auto xl:mt-0 -mt-7">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y touch-pinch-zoom">
           {slides.map((slide, index) => (
@@ -24,7 +24,7 @@ export default function EmblaSlider(props: PropType): JSX.Element {
               <img
                 src={slide}
                 alt={`Slide ${index + 1}`}
-                className="w-full  h-full object-cover transition-all transform ease-in-out duration-500  rounded-3xl shadow-black shadow-lg hover:shadow-md  scale-75 xl:hover:scale-90"
+                className="w-full h-3/4  xl:h-full object-cover transition-all transform ease-in-out duration-500  rounded-3xl shadow-black shadow-lg hover:shadow-md  scale-75 xl:hover:scale-90"
               />
             </div>
           ))}
