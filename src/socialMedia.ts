@@ -1,6 +1,6 @@
-import instagram_logo from './assets/instagram_icon.svg';
-import facebook_logo from './assets/facebook_icon.svg';
-import youtube_logo from './assets/youtube_icon.svg';
+import instagram_logo from './assets/icons/instagram_icon.svg';
+import facebook_logo from './assets/icons/facebook_icon.svg';
+import youtube_logo from './assets/icons/youtube_icon.svg';
 
 interface socialMediaContent {
     title: string;

@@ -1,34 +1,22 @@
+
+![Async Landing Page](src/assets/async_logo_1.png)
+
 # Async Landing Page
 
 This is a landing page dedicated to my service to provide people with 3D printing services
 
+Here are some references for my socials that are related to my site!
+
+* [Facebook](https://web.facebook.com/profile.php?id=61571412057694)
+
+* [Instagram](https://www.instagram.com/async_lab_/)
+
+* [Youtube](https://www.youtube.com/@the_what)
+
+**Thanks for stopping by!**
+
+
 ## Installs:
-
-**NPM & Tailwind:** <br>
-```
-npm install -D tailwindcss
-npx tailwindcss init
-```
-
-**React Icons:** <br>
-```
-npm install react-icons --save
-```
-
-**Mobile Swipe Functionality** <br>
-```
-npm install @use-gesture/react react-spring
-```
-
-**Slick Image Slider** <br>
-```
-npm install react-slick --save
-```
-
-**Animate On Scroll Library**
-```
-npm install aos --save
-```
 
 **BATCH dependancy installs** <br>
 Run in the terminal the BASH script called ```install_dependencies.sh``` to automatically install all dependencies. Or if you are on windows, run the  ```install_dependencies.bat``` file
