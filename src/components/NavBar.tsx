@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import asyncLogo from '../assets/async_logo_4_white.png';
-import asyncLogoMobile from '../assets/async_logo_4_white.png';
+import asyncLogo from '../assets/async/async_logo_4_white.png';
+import asyncLogoMobile from '../assets/async/async_logo_4_white.png';
 import languages from '../languages';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useSpring, animated } from 'react-spring';

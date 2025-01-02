@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { socialMedias, forumURL } from "../socialMedia";
 import languages from "../languages";
-import form from "../assets/form.svg";
+import form from "../assets/icons/form_icon.svg";
 import SectionTitle from "./SectionTitle";
 import contact_icon from "../assets/icons/contact_icon.svg";
 

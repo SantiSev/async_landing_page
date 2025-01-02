@@ -1,7 +1,7 @@
-import cults_logo from "../src/assets/cults_logo.png";
-import creality_cloud_logo from "../src/assets/creality_cloud_logo.jpg";
-import thingiverse_logo from "../src/assets/thingiverse_logo.png";
-import myminifactory_logo from "../src/assets/myminifactory_logo.jpg";
+import cults_logo from "../src/assets/icons/cults_logo.png";
+import creality_cloud_logo from "../src/assets/icons/creality_cloud_logo.jpg";
+import thingiverse_logo from "../src/assets/icons/thingiverse_logo.png";
+import myminifactory_logo from "../src/assets/icons/myminifactory_logo.jpg";
 
 
 interface WebsiteContent {

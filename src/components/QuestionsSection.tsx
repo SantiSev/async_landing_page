@@ -1,6 +1,6 @@
 import React from "react";
 import languages from "../languages";
-import timelapse from "../assets/timelapse_sped_up.gif";
+import timelapse from "../assets/prints/timelapse_sped_up.gif";
 import websites from "../websites";
 
 interface QuestionsSectionProps {
