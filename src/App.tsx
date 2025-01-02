@@ -2,10 +2,10 @@ import { useState } from 'react';
 import NavBar from './components/NavBar'
 import Banner from './components/BannerSection'
 import QuestionsSection from './components/QuestionsSection'
-import ImagesSection from './components/ImagesSection'
 import BodySection from './components/BodySection'
 import FooterSection from './components/FooterSection'
 import BackgroundSection from './components/BackgroundSection'
+import ImagesSection from './components/ImagesSection';
 
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
       <NavBar  language={language} onLanguageChange={handleLanguageChange} />
       <Banner/>
       <BodySection>
-        <QuestionsSection language={language} />
         <BackgroundSection>
+        <QuestionsSection language={language} />
           <ImagesSection language={language} />
           <FooterSection language={language} />
         </BackgroundSection>

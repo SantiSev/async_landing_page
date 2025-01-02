@@ -6,7 +6,7 @@ This is a landing page dedicated to my service to provide people with 3D printin
 
 **NPM & Tailwind:** <br>
 ```
-npm install -D tailwindcss <br>
+npm install -D tailwindcss
 npx tailwindcss init
 ```
 
