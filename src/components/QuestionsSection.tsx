@@ -1,6 +1,6 @@
 import React from "react";
 import languages from "../languages";
-import timelapse from "../assets/timelapse.gif";
+import timelapse from "../assets/timelapse_sped_up.gif";
 import websites from "../websites";
 
 interface QuestionsSectionProps {
@@ -37,13 +37,13 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
             </div>
           ))}
           <div className="flex justify-center items-center gap-20">
-            <div className="flex xl:gap-14 gap-9 xl:mt-0 mt-5">
+            <div className="flex xl:gap-14 gap-8 xl:mt-0 mt-5">
               {websites.map((content, index) => (
                 <a
                 href={content.link}
                 target="_blank"
                   key={index}
-                  className="xl:w-24 xl:h-24 h-16 w-16 rounded-full hover:scale-110 transform transition-all shadow-md flex justify-center items-center overflow-hidden"
+                  className="xl:w-20 xl:h-20 h-16 w-16 rounded-full hover:scale-110 transform transition-all shadow-md flex justify-center items-center overflow-hidden"
                 >
                   <img
                     src={content.logo}

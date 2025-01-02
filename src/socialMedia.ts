@@ -12,7 +12,7 @@ const socialMedias: socialMediaContent[] = [
     {
         title: "Instagram",
         logo: instagram_logo,
-        link: "https://www.instagram.com/async_services/"
+        link: "https://www.instagram.com/async_lab_/"
     },
     {
         title: "Facebook",

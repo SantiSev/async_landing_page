@@ -15,7 +15,7 @@ const Banner = () => {
   };
 
   return (
-    <div id="home" className="relative w-full h-screen mb-8">
+    <div id="home" className="relative w-full h-screen mb-7">
       <video
         className="absolute top-0 left-0 bottom-0 w-full h-full object-cover"
         src={banner_video}
