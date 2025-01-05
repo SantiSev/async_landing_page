@@ -1,5 +1,5 @@
 
-![Async Landing Page](src/assets/async_logo_1.png)
+![Async Landing Page](src/assets/async/async_logo_1.png)
 
 # Async Landing Page
 
