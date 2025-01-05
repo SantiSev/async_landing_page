@@ -57,7 +57,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ language }) => {
       <div className="my-5 py-3 flex items-center justify-center">
         <div className="flex flex-col">
             <a
-            className="flex items-center justify-center gap-4 bg-background_purple xl:hover:scale-110 hover:-mt-2 xl:hover:cursor-pointer xl:px-40 hover:px-60 py-3 rounded-full font-bold xl:text-2xl text-lg px-5 transform transition-all"
+            className="flex items-center justify-center gap-4 bg-background_purple  hover:-mt-2 xl:hover:cursor-pointer xl:px-40 xl:hover:px-60 py-3 rounded-full font-bold xl:text-2xl text-lg px-5 transform transition-all"
             href={forumURL}
             target="_blank"
             rel="noopener noreferrer"
