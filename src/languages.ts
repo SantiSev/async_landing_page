@@ -60,7 +60,7 @@ const languages: { [key: string]: LanguageTexts } = {
     ],
     our_prints: "Our Prints",
     contact_us: "Contact Us",
-    created_by: "Created by Santiago Sevitz, 2024",
+    created_by: "Created by Santiago Sevitz, 2025",
     form_header: "Click here to contact us!",
     form_questions: [
       "Check our shipping!",
@@ -108,7 +108,7 @@ const languages: { [key: string]: LanguageTexts } = {
     ],
     our_prints: "Nuestras Impresiones",
     contact_us: "Contacto",
-    created_by: "Creado por Santiago Sevitz, 2024",
+    created_by: "Creado por Santiago Sevitz, 2025",
     form_header: "¡Ingresa aquí para contactarnos!",
     form_questions: [
       "¡Consulta nuestros envíos!",
