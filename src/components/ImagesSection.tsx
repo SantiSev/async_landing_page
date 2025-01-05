@@ -42,7 +42,7 @@ const ImagesSectionRefactor: React.FC<ImagesSectionProps> = ({ language }) => {
               {texts.services_text.map((service, index) => (
                 <div
                   key={index}
-                  className={`xl:-mt-0 -mt-20 justify-center items-center flex flex-col xl:w-1/3 w-full h-fit rounded-full bg-opacity-30 text-white font-montserrat cursor-pointer transition-opacity duration-1000 ${
+                  className={`-mt-0 md:-mt-56 justify-center items-center flex flex-col xl:w-1/3 w-full h-fit rounded-full bg-opacity-30 text-white font-montserrat cursor-pointer transition-opacity duration-1000 ${
                     currentIndex === index ? "block" : "hidden"
                   } xl:block`}
                   style={{ opacity: 1 }}
