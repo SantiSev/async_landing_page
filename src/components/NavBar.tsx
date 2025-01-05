@@ -83,9 +83,9 @@ const NavBar: React.FC<NavBarProps> = ({ language, onLanguageChange }) => {
                                     {item.text}
                                 </div>
                             ))}
-                            <div onClick={onLanguageChange} className="font-semibold md:text-2xl text-3xl bg-opacity-75 hover:cursor-pointer pb-1 text-center w-14  p-2 rounded-full ">{texts.current_language}</div>
+                            <div onClick={onLanguageChange} className="font-semibold md:text-2xl text-3xl bg-opacity-75 hover:cursor-pointer pb-1 text-center w-14  p-2 rounded-full ">{texts.change_language}</div>
                         </div>
-                        <div  onClick={onLanguageChange} className="md:hidden w-14 font-semibold text-3xl hover:cursor-pointer">{texts.current_language}</div>
+                        <div  onClick={onLanguageChange} className="md:hidden w-14 font-semibold text-3xl hover:cursor-pointer">{texts.change_language}</div>
                     </div>
                 </div>
             </div>

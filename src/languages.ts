@@ -1,5 +1,5 @@
 interface LanguageTexts {
-  current_language: string;
+  change_language: string;
   services: string;
   services_text: {
     header: string;
@@ -21,7 +21,7 @@ interface LanguageTexts {
 
 const languages: { [key: string]: LanguageTexts } = {
   en: {
-    current_language: "EN",
+    change_language: "ES",
     services: "Services",
     services_text: [
       {
@@ -69,7 +69,7 @@ const languages: { [key: string]: LanguageTexts } = {
     ],
   },
   es: {
-    current_language: "ES",
+    change_language: "EN",
     services: "Servicios",
     services_text: [
       {
