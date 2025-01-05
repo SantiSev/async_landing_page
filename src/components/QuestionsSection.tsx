@@ -24,7 +24,7 @@ const QuestionsSection: React.FC<QuestionsSectionProps> = ({ language }) => {
           />
         </div>
 
-        <div className="xl:mt-0 mt-20  w-full xl:w-1/3 flex flex-col  gap-y-2 xl:gap-4 gap-1 justify-center items-center text-center xl:px-0 px-10">
+        <div className="xl:mt-0 mt-20  w-full xl:w-1/3 flex flex-col  gap-y-14 lg:gap-y-2 xl:gap-4 gap-1 justify-center items-center text-center xl:px-0 px-10">
           {texts.printing_explained.map((question, index) => (
             <div
               key={index}
